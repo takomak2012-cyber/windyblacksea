@@ -36,6 +36,12 @@
   .btn-primary:hover{filter:brightness(1.08)}
   .btn-ghost{border:1px solid var(--stroke);color:var(--text)}
   .note{color:var(--muted);font-size:12px;margin-top:12px}
+  .hero-badge{display:none;align-items:center;gap:12px;margin:2px 0 14px}
+  .hero-badge img{width:52px;height:52px;border-radius:14px;border:1px solid var(--stroke)}
+  .hero-badge b{display:block;font-size:16px;letter-spacing:.01em}
+  .hero-badge span{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+  .hero-pills{display:none;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+  .pill{border:1px solid var(--stroke);background:var(--card);border-radius:999px;padding:7px 12px;font-size:12.5px;color:var(--muted)}
   .phone{
     justify-self:center;width:min(300px,80vw);border-radius:34px;border:1px solid var(--stroke);
     background:#0a1a25;padding:10px;box-shadow:0 30px 70px rgba(0,0,0,.55)
@@ -69,7 +75,15 @@
   footer .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   footer a{color:var(--muted)}
   @media (max-width:860px){
-    .hero{grid-template-columns:1fr;gap:30px;padding-top:20px}
+    .hero{grid-template-columns:1fr;gap:22px;padding-top:14px}
+    .hero .phone{display:none}
+    .hero-badge{display:flex}
+    .hero-pills{display:flex}
+    .hero h1{font-size:33px;margin:10px 0 12px}
+    .lead{font-size:15.5px}
+    .buttons{flex-direction:column;gap:10px;margin-top:20px}
+    .buttons .btn{width:100%;justify-content:center}
+    .note{font-size:11.5px}
     .shots,.split{grid-template-columns:1fr}
     nav{display:none}
   }
@@ -94,6 +108,13 @@
   <main>
     <section class="hero">
       <div>
+        <div class="hero-badge">
+          <img src="icon.png" alt="Иконка WindyBlackSea">
+          <div>
+            <b>WindyBlackSea</b>
+            <span>Погода и море · Керчь — Адлер</span>
+          </div>
+        </div>
         <div class="kicker">Погода · волны · ветер</div>
         <h1>Море и погода<br>от Керчи до Адлера</h1>
         <p class="lead">Семь дней прогноза для каждого посёлка побережья: температура, осадки,
@@ -105,6 +126,12 @@
           <a class="btn btn-ghost" href="#pro">Про Pro-версию</a>
         </div>
         <p class="note">Бесплатная версия с рекламой · Android 7.0+ · RuStore — скоро</p>
+        <div class="hero-pills">
+          <span class="pill">7 дней</span>
+          <span class="pill">Волны и вода</span>
+          <span class="pill">Карта ветра</span>
+          <span class="pill">Керчь — Адлер</span>
+        </div>
       </div>
       <div class="phone"><img src="screens/main.png" alt="Экран погоды WindyBlackSea"></div>
     </section>
