@@ -36,6 +36,10 @@
   .btn-primary:hover{filter:brightness(1.08)}
   .btn-ghost{border:1px solid var(--stroke);color:var(--text)}
   .note{color:var(--muted);font-size:12px;margin-top:12px}
+  .price{font-size:26px;font-weight:700;color:var(--accent);margin:0 0 14px;letter-spacing:-.01em}
+  .price span{font-size:13px;font-weight:500;color:var(--muted);letter-spacing:0}
+  .warn{border:1px solid #6b5320;background:rgba(253,210,138,.08);color:#f0dcb0;border-radius:12px;
+    padding:10px 13px;font-size:12.5px;margin:12px 0 0}
   .hero-badge{display:none;align-items:center;gap:12px;margin:2px 0 14px}
   .hero-badge img{width:52px;height:52px;border-radius:14px;border:1px solid var(--stroke)}
   .hero-badge b{display:block;font-size:16px;letter-spacing:.01em}
@@ -208,6 +212,7 @@
           </div>
           <div>
             <p class="sub">Сначала скачайте Pro-сборку, затем напишите разработчику за ключом активации:</p>
+            <p class="price">500 ₽ <span>· лицензия на 12 месяцев</span></p>
             <p style="margin:0 0 14px">
               <a class="btn btn-primary" href="https://github.com/takomak2012-cyber/windyblacksea/releases/latest/download/WindyBlackSea-pro.apk" download>
                 Скачать Pro APK
@@ -244,7 +249,10 @@
         <div class="step"><b>2</b><p>Откройте файл и разрешите установку из этого источника, если система спросит.</p></div>
         <div class="step"><b>3</b><p>Запустите WindyBlackSea и выберите свой посёлок на карте или в списке.</p></div>
       </div>
-      <p class="note">Для RuStore готовится отдельная сборка с тем же пакетом <code>ru.windak.blacksea</code>.</p>
+      <p class="note">Pro-версия ставится поверх бесплатной: пакет и подпись те же, поэтому выбранный посёлок,
+        настройки и карта сохраняются. Если система всё же откажется устанавливать — удалите бесплатную
+        версию и поставьте Pro заново (ключ активации при этом понадобится только один раз).</p>
+      <p class="note">Версия на сайте: 1.11 · RuStore — на модерации.</p>
     </section>
   </main>
 
