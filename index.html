@@ -38,6 +38,12 @@
   .btn-pro:hover{filter:brightness(1.08)}
   .btn-ghost{border:1px solid var(--stroke);color:var(--text)}
   .note{color:var(--muted);font-size:12px;margin-top:12px}
+  .warn-box{margin-top:22px;background:rgba(94,219,255,.07);border:1px solid rgba(94,219,255,.28);
+    border-left:3px solid var(--accent);border-radius:14px;padding:16px 18px}
+  .warn-box b{display:block;font-size:14px;margin-bottom:8px;color:var(--text)}
+  .warn-box p{margin:0 0 8px;color:var(--muted);font-size:13px}
+  .warn-box ol{margin:8px 0 0;padding-left:20px;color:var(--muted);font-size:13px}
+  .warn-box li{margin-bottom:6px}
   .price{font-size:26px;font-weight:700;color:var(--accent);margin:0 0 14px;letter-spacing:-.01em}
   .price span{font-size:13px;font-weight:500;color:var(--muted);letter-spacing:0}
   .warn{border:1px solid #6b5320;background:rgba(253,210,138,.08);color:#f0dcb0;border-radius:12px;
@@ -257,6 +263,26 @@
       <p class="note">Pro-версия ставится поверх бесплатной: пакет и подпись те же, поэтому выбранный посёлок,
         настройки и карта сохраняются. Если система всё же откажется устанавливать — удалите бесплатную
         версию и поставьте Pro заново (ключ активации при этом понадобится только один раз).</p>
+
+      <div class="warn-box">
+        <b>Почему Android предупреждает при установке</b>
+        <p>Приложения нет и не будет в Google Play — это осознанное решение. Бесплатная версия
+          распространяется через RuStore, Pro — с этого сайта. Поэтому Play Защита (Play Protect)
+          показывает «Приложение не проверено» или даже «Вредоносное ПО»: так Google помечает любой APK,
+          скачанный не из его магазина. Это не признак проблемы — приложение подписано одним ключом
+          и не запрашивает ничего лишнего.</p>
+        <ol>
+          <li>На предупреждении нажмите «Подробнее» → «Всё равно установить».</li>
+          <li>Если такой кнопки нет: Play Маркет → аватар → Play Защита → шестерёнка → выключите
+            «Проверять приложения с помощью Play Protect», установите APK и включите проверку обратно.</li>
+          <li>Android 14+: «Настройки» → «Приложения» → «Специальный доступ» → «Установка неизвестных
+            приложений» → разрешите для браузера или файлового менеджера.</li>
+          <li>Если установка Pro поверх Lite зависла — закройте приложение, при необходимости удалите Lite
+            и поставьте Pro заново: ключ активации продолжит работать.</li>
+        </ol>
+        <p style="margin-bottom:0">В RuStore таких предупреждений нет — оттуда ставится бесплатная версия.</p>
+      </div>
+
       <p class="note">Версия на сайте: 1.16 · RuStore — на модерации.</p>
     </section>
   </main>
