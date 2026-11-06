@@ -31,6 +31,8 @@
   h1{font-size:clamp(30px,4.6vw,52px);line-height:1.12;margin:14px 0 16px;letter-spacing:-.01em}
   .lead{color:var(--muted);font-size:17px;max-width:46ch}
   .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+  .btn-block{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+  .btn-hint{font-size:11.5px;line-height:1.35;color:var(--muted);max-width:220px}
   .btn{display:inline-flex;align-items:center;gap:9px;padding:13px 22px;border-radius:14px;font-weight:600;font-size:15px}
   .btn-primary{background:var(--accent);color:#00222e}
   .btn-primary:hover{filter:brightness(1.08)}
@@ -94,7 +96,9 @@
     .hero h1{font-size:33px;margin:10px 0 12px}
     .lead{font-size:15.5px}
     .buttons{flex-direction:column;gap:10px;margin-top:20px}
+    .buttons .btn-block{width:100%}
     .buttons .btn{width:100%;justify-content:center}
+    .btn-hint{max-width:none}
     .note{font-size:11.5px}
     .shots,.split{grid-template-columns:1fr}
     nav{display:none}
@@ -132,13 +136,22 @@
         <p class="lead">Семь дней прогноза для каждого посёлка побережья: температура, осадки,
           высота и период волны, температура воды и живая карта ветра.</p>
         <div class="buttons">
-          <a class="btn btn-primary" href="https://github.com/takomak2012-cyber/windyblacksea/releases/latest/download/WindyBlackSea-store.apk" download>
-            Скачать Lite версию
-          </a>
-          <a class="btn btn-pro" href="https://github.com/takomak2012-cyber/windyblacksea/releases/latest/download/WindyBlackSea-pro.apk" download>
-            Скачать Pro версию
-          </a>
-          <a class="btn btn-ghost" href="#pro">Про Pro версию</a>
+          <div class="btn-block">
+            <a class="btn btn-primary" href="https://github.com/takomak2012-cyber/windyblacksea/releases/latest/download/WindyBlackSea-store.apk" download>
+              Скачать Lite версию
+            </a>
+            <span class="btn-hint">Бесплатная, с баннером. Ключ не нужен.</span>
+          </div>
+          <div class="btn-block">
+            <a class="btn btn-pro" href="https://github.com/takomak2012-cyber/windyblacksea/releases/latest/download/WindyBlackSea-pro.apk" download>
+              Скачать Pro версию
+            </a>
+            <span class="btn-hint">О получении ключа читайте ниже — сразу после установки 7 дней работают бесплатно.</span>
+          </div>
+          <div class="btn-block">
+            <a class="btn btn-ghost" href="#pro">Про Pro версию</a>
+            <span class="btn-hint">Как получить ключ и активировать приложение.</span>
+          </div>
         </div>
         <p class="note">Бесплатная версия с рекламой · Android 7.0+ · RuStore — скоро</p>
         <div class="hero-pills">
