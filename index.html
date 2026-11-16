@@ -43,6 +43,10 @@
   .btn-pro{background:var(--sea);color:#03251d}
   .btn-pro:hover{filter:brightness(1.08)}
   .btn-ghost{border:1px solid var(--stroke);color:var(--text)}
+.btn-rustore{background:linear-gradient(135deg,#4E5BFF,#9B5CFF);color:#fff}
+.btn-rustore:hover{filter:brightness(1.08)}
+.btn-rustore svg{width:18px;height:18px;flex:none}
+.btn-hint a{color:var(--accent)}
   .note{color:var(--muted);font-size:12px;margin-top:12px}
   .warn-box{margin:8px 0 28px;background:rgba(94,219,255,.07);border:1px solid rgba(94,219,255,.28);
     border-left:3px solid var(--accent);border-radius:14px;padding:16px 18px}
@@ -142,10 +146,11 @@
           высота и период волны, температура воды и живая карта ветра.</p>
         <div class="buttons">
           <div class="btn-block">
-            <a class="btn btn-primary" href="https://github.com/takomak2012-cyber/windyblacksea/releases/latest/download/WindyBlackSea-store.apk" download>
-              Скачать Lite версию
+            <a class="btn btn-rustore" href="https://www.rustore.ru/catalog/app/ru.windak.blacksea" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v11"/><path d="m7 10 5 5 5-5"/><path d="M4 19h16"/></svg>
+              Скачать в RuStore
             </a>
-            <span class="btn-hint">Бесплатная, с баннером. Ключ не нужен.</span>
+            <span class="btn-hint">Бесплатная версия с баннером, обновляется магазином. Нет RuStore? <a href="https://github.com/takomak2012-cyber/windyblacksea/releases/latest/download/WindyBlackSea-store.apk" download>Скачать APK напрямую</a>.</span>
           </div>
           <div class="btn-block">
             <a class="btn btn-pro" href="https://github.com/takomak2012-cyber/windyblacksea/releases/latest/download/WindyBlackSea-pro.apk" download>
@@ -162,7 +167,7 @@
             <span class="btn-hint">Другие приложения и игры разработчика.</span>
           </div>
         </div>
-        <p class="note">Бесплатная версия с рекламой · Android 7.0+ · Lite — в RuStore</p>
+        <p class="note">Бесплатная версия с рекламой · Android 7.0+ · <a href="https://www.rustore.ru/catalog/app/ru.windak.blacksea" target="_blank" rel="noopener">Есть в RuStore</a></p>
         <div class="hero-pills">
           <span class="pill">7 дней</span>
           <span class="pill">Волны и вода</span>
@@ -299,17 +304,17 @@
 
     <section id="install">
       <h2>Установка</h2>
-      <p class="sub">APK ставится напрямую, без магазина приложений. Выбирайте Lite (бесплатная, с баннером) или Pro (без рекламы, с виджетом и обновлениями, 7 дней бесплатно).</p>
+      <p class="sub">Бесплатную версию ставьте из RuStore — магазин сам обновит её. Pro ставится APK с сайта: без рекламы, с виджетом и обновлениями, 7 дней бесплатно.</p>
       <div class="steps">
-        <div class="step"><b>1</b><p>Нажмите «Скачать Lite версию» или «Скачать Pro версию» — файл сразу загрузится на телефон.</p></div>
-        <div class="step"><b>2</b><p>Откройте файл и разрешите установку из этого источника, если система спросит.</p></div>
+        <div class="step"><b>1</b><p>Откройте <a href="https://www.rustore.ru/catalog/app/ru.windak.blacksea" target="_blank" rel="noopener">WindyBlackSea в RuStore</a> и нажмите «Установить» — либо скачайте Pro-APK кнопкой выше.</p></div>
+        <div class="step"><b>2</b><p>Для Pro-APK: откройте файл и разрешите установку из этого источника, если система спросит.</p></div>
         <div class="step"><b>3</b><p>Запустите WindyBlackSea и выберите свой посёлок на карте или в списке.</p></div>
       </div>
       <p class="note">Pro-версия ставится поверх бесплатной: пакет и подпись те же, поэтому выбранный посёлок,
         настройки и карта сохраняются. Если система всё же откажется устанавливать — удалите бесплатную
         версию и поставьте Pro заново (ключ активации при этом понадобится только один раз).</p>
 
-      <p class="note">Версия на сайте: 1.42 · В RuStore — 1.22, обновление готовится.</p>
+      <p class="note">Версия на сайте: 1.42 · В RuStore — 1.10, новые версии появляются здесь раньше, чем в магазине.</p>
     </section>
   </main>
 
@@ -317,6 +322,7 @@
     <div class="row">
       <div>© 2026 WinDak · WindyBlackSea</div>
       <div>
+        <a href="https://www.rustore.ru/catalog/app/ru.windak.blacksea" target="_blank" rel="noopener">RuStore</a> ·
         <a href="privacy.html">Конфиденциальность</a> ·
         <a href="app-ads.txt">app-ads.txt</a> ·
         <a href="https://github.com/takomak2012-cyber/windyblacksea">GitHub</a>
